@@ -1,18 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+        integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Rafael Jesus Saraiva</title>
+</head>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Website Brevemente disponível</h1>
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <div class="video-contain">
+                <video data-autoplay loop muted poster="img/video-beach_poster.png" id="bgvid">
+                    <source data-src="video/beach.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="sidebar">
+                <div class="spaced-container">
+                    <div class="logo-container">
+                        <img src="img/logo.png" alt="Logo" draggable="false">
+                    </div>
+                    <h1><span>Rafael</span> <span>Jesus</span> <span>Saraiva</span></h1>
+                </div>
+                <ul class="menu-list">
+                    <li id="option"><a>Brevemente disponível</a></li>
+                    <!-- <li id="option" data-linktype="work"><a>Trabalhos</a></li>
+                    <li id="option" data-linktype="about"><a>Sobre Mim</a></li>
+                    <li id="option" data-linktype="contact"><a>Contacta-me</a></li> -->
+                </ul>
+            </div>
+            <!-- <div class="down-button">
+                <a class="icon" onclick="movewindow('down')">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="8 12 12 16 16 12"></polyline>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                    </svg>
+                </a>
+            </div> -->
+        </div>
+        <div class="section" data-anchor="content">
+            <div class="up-button">
+                <a class="icon" onclick="movewindow('up')">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="16 12 12 8 8 12"></polyline>
+                        <line x1="12" y1="16" x2="12" y2="8"></line>
+                    </svg>
+                </a>
+            </div>
+            <div class="side-buttons">
+                <a class="left-button hidden" onclick="movewindow('left')">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    </div>
+                </a>
+                <a class="right-button" onclick="movewindow('right')">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </a>
+            </div>
+            <div class="slide" id="trabalhos">
+                <div class="container">
+                    <div class="header">
+                        <h2>Trabalhos</h2>
+                    </div>
+                    <div class="library">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="sobre mim">
+                <div class="container">
+                    <div class="header">
+                        <h2>Sobre Mim</h2>
+                    </div>
+                    <div class="library">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="contacta-me">
+                <div class="container">
+                    <div class="header">
+                        <h2>Contacta-me</h2>
+                    </div>
+                    <div class="library">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
